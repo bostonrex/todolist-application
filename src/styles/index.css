@@ -1,12 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lilita+One&family=Montserrat:ital,wght@1,200&display=swap');
 
-/* 
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+*{
+    font-family: 'Anton', sans-serif;
+    font-family: 'Lilita One', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
 
-*/
+.todo-list {
+    color: rgb(50, 46, 52);
+    }
+    
+    .todo-list input[type='text'] {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 14px;
+    margin-right: 10px;
+    }
+    
+    .todo-list button {
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: rgb(247, 244, 229);
+    color: rgb(27, 26, 26);
+    border: none;
+    cursor: pointer;
+    }
+    
+    .todo-list button:hover {
+    background-color: #c7c799;
+    }
+    
+    .todo-list ul {
+    list-style-type: none;
+    padding: 0;
+    }
+    
+    .todo-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    }
+    
+    .todo-list li.completed span {
+    text-decoration: line-through;
+    color: #aaa;
+    }
+    
+    .todo-list li button {
+    margin-left: auto;
+    }
+
+    .TodoListCard {
+    background-color: rgb(247, 244, 229);
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+    0 0  0 2px rgb(255,255,255),
+    0.3em 0.3em 1em rgba(0,0,0,0.3);;
+    }
