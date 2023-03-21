@@ -44,7 +44,7 @@ const TodoList = () => {
                     </ul>
                 </div>
                 <div className='border'>
-                    <p className='footer ms-4 mt-3'>{pendingTasks} Items Left</p>
+                    <p className='footer ms-4 mt-3'>{pendingTasks} Pending Task </p>
                 </div>
             </div >
         </div>
