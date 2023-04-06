@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const urlBase = "http://assets.breatheco.de/apis/fake/todos/user/";
+const urlBase = "https://assets.breatheco.de/apis/fake/todos/user/";
 const apiUsername = "bostonrex";
 
 const TodoList = () => {
@@ -18,11 +18,11 @@ const TodoList = () => {
         }
     };
 
-    const syncTasks = async () => {
+    const syncTasks = async (newTask) => {
         try {
             const response = await fetch(`${urlBase}${apiUsername}`, {
                 method: 'PUT',
-                body: JSON.stringify(tasks),
+                body: JSON.stringify(newTask),
                 headers: {
                     'Content-Type': 'application/json',
                 },
@@ -30,6 +30,7 @@ const TodoList = () => {
             if (!response.ok) {
                 throw new Error('Error updating tasks');
             }
+
             fetchTodoApi();
 
         } catch (error) {
