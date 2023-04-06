@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
 
 
 *{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Comfortaa', cursive;
 }
 
 .todo-list {
@@ -52,7 +52,7 @@
     .TodoListCard {
     background-color: rgb(212, 252, 212);
     box-shadow: inset 0 -3em 3em rgba(205, 195, 195, 0.1),
-    0 0  0 10px rgb(255,255,255),
+    0 0  0 10px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0,0,0,0.3);;
     }
 

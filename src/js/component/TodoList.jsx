@@ -29,7 +29,7 @@ const TodoList = () => {
             });
             if (!response.ok) {
                 throw new Error('Error updating tasks');
-            }
+            }ls
 
             fetchTodoApi();
 
@@ -69,7 +69,7 @@ const TodoList = () => {
         <div className='d-flex justify-content-center mt-5'>
             <div className='TodoListCard border col-6'>
                 <div className="todo-list p-3">
-                    <h1 className="d-flex justify-content-center fs-1"> TODOS</h1>
+                    <h1 className="d-flex justify-content-center fs-1"> TO DO lIST</h1>
                     <form onSubmit={addTask}>
                         <input
                             type="text"
@@ -81,8 +81,8 @@ const TodoList = () => {
                     <ul>
                         {tasks.map((task, index) => (
                             <li key={index} className={task.done ? 'completed' : ''}>
-                                <span>{task.label}</span>
-                                <button onClick={() => removeTask(index)}>X</button>
+                                <span className='ms-2'>{task.label}</span>
+                                <button onClick={() => removeTask(index)}><i class="fas fa-check-circle"></i></button>
                             </li>
                         ))}
                     </ul>
